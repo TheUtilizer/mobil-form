@@ -24,6 +24,10 @@ span { font-size: 2em;}
   box-sizing: border-box;
 }
 
+.main-container {
+  max-width: 450px;
+}
+
 header {
   background-color: var(--header-color);
   color: var(--white);
@@ -61,7 +65,8 @@ header {
 
 :placeholder-shown {
   font-size: 1em;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  padding-left: 1rem;
 }
 
 .form-item {
@@ -86,6 +91,10 @@ header {
 
 select {
   width: 30%;
+  height: 4em;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  margin-left: 2px;
 }
 
 .form-item2 input {
@@ -94,4 +103,64 @@ select {
   height: 4em;
   border-radius: 5px;
   margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+ input.city {
+  height: 4em;
+  background-color: var(--white);
+  border: 1px solid var(--font-color-base);
+  border-radius: 5px;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+#id {
+  width: 40%;
+  border-radius: 0;
+  border-bottom: 1px solid var(--font-color-dark);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  height: initial;
+}
+
+.zip {
+  width: 40%;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  margin-left: 1em;
+}
+
+.form-item6 input {
+  width: 85%;
+  height: 4em;
+  background-color: var(--white);
+  border: 1px solid var(--font-color-base);
+  border-radius: 5px;
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+.form-item7 input {
+  width: 85%;
+  height: 4em;
+  border-bottom: 1px solid var(--font-color-dark);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  margin-left: 1em;
+  background-color: lightgray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.form-item7  .placeholderclass::before {
+  width: 100%;
+  content: attr(placeholder);
+}
+.form-item7 .placeholderclass:hover::before {
+  width: 0%;
+  content: "";
 }

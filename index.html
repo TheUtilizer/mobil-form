@@ -43,9 +43,37 @@
           <option value="" disable selected>Label</option>
         </select>
       </div>
-      <div class="form-item"></div>
+      <div class="form-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Address">
+      </div>
+      <div class="form-item">
+        <i></i>
+        <input class="city" type="address" placeholder="city">
+      </div>
+      <div class="form-item5">
+        <select name="" id="state">
+          <option value="" disable selected>State</option>
+        </select>
+        <input class="zip" type="number" placeholder="Zip">
+      </div>
+      <div class="form-item6">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="email">
+      </div>
+      <div class="form-item7">
+        <i class="fa-solid fa-cake-candles"></i>
+        <input
+        type="date"
+        placeholder="Birthday"
+        onClick="$(this).removeClass('placeholderclass')"
+        class="dateclass placeholderclass">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      </div>
     </form>
    </div>
 
+
+   
   </body>
 </html>
